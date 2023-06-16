@@ -77,6 +77,23 @@ function q5() {
   return q5Result;
 }
 
+function submitAnswers() {
+  console.log("submitAnswer function executing!")
+  let r1 = q1();
+  let r2 = q2();
+  let r3 = q3();
+  let r4 = q4();
+  let r5 = q5();
+  let allr = r1 + r2 + r3 + r4 + r5;
+
+  if (allr > 0) {
+    document.querySelector("div#javaAnswer").removeAttribute("class");
+  } else if (allr > 0 || < 80) {
+    document.querySelector("div#pyAnswer").removeAttribute("class");
+  } else if (allr > 80) {
+    document.querySelector("div#cAnswer").removeAttribute("class")
+  }
+}
 
 
 function q10() {
@@ -85,7 +102,7 @@ function q10() {
 
 window.addEventListener("load", function () {
   const form = document.getElementById("radio-form");
-  form.addEventListener("submit", q10)
+  form.addEventListener("submit", submitAnswers())
 });
 
 
