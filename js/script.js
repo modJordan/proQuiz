@@ -2,13 +2,13 @@ window.onload = function () {
   let form = document.querySelector("form");
   console.log("window onload executing");
   form.onsubmit = function (e) {
-    e.preventDefault();
     console.log("onsubmit form reached");
-    let q1Select = document.querySelector("input[name='q1Input']").value;
-    let q2Select = document.querySelector("input[name='q2Input']").value;
-    let q3Select = document.querySelector("input[name='q3Input']").value;
-    let q4Select = document.querySelector("input[name='q4Input']").value;
-    let q5Select = document.querySelector("input[name='q5Input']").value;
+    let q1Select = document.querySelector("input[name='q1Input']:checked").value;
+    let q2Select = document.querySelector("input[name='q2Input']:checked").value;
+    let q3Select = document.querySelector("input[name='q3Input']:checked").value;
+    let q4Select = document.querySelector("input[name='q4Input']:checked").value;
+    let q5Select = document.querySelector("input[name='q5Input']:checked").value;
+    e.preventDefault();
 
     function q1() {
       console.log("I made it to q1! yay");
@@ -20,7 +20,6 @@ window.onload = function () {
         q1Select = parseInt(100);
       } return q1Select;
     }
-    let q1Result = q1();
 
     function q2() {
       console.log("function q2 is executing!")
@@ -30,7 +29,7 @@ window.onload = function () {
         q2Select = parseInt(-10);
       } else if (q2Select === "cSharp2") {
         q2Select = parseInt(100);
-        console.log(q2Result);
+        console.log(q2Select);
       } return q2Select;
     }
 
@@ -42,7 +41,7 @@ window.onload = function () {
         q3Select = parseInt(-10);
       } else if (q3Select === "cSharp3") {
         q3Select = parseInt(100);
-        console.log(q3Result);
+        console.log(q3Select);
       } return q3Select;
     }
 
@@ -54,7 +53,7 @@ window.onload = function () {
         q4Select = parseInt(-10);
       } else if (q4Select === "cSharp4") {
         q4Select = parseInt(100);
-        console.log(q4Result);
+        console.log(q4Select);
       } return q4Select;
     }
 
@@ -66,33 +65,30 @@ window.onload = function () {
         q5Select = parseInt(-10);
       } else if (q5Select === "cSharp5") {
         q5Select = parseInt(100);
-        console.log(q5Result);
+        console.log(q5Select);
       } return q5Select;
     }
 
 
 
 
-    function submitAnswers() {
+    let result = function submitAnswers() {
       console.log("submitAnswer function executing!")
-      let r1 = q1();
-      let r2 = q2();
-      let r3 = q3();
-      let r4 = q4();
-      let r5 = q5();
-      let allr = (r1 + r2 + r3 + r4 + r5);
+      let r1 = q1(q1Select);
+      let r2 = q2(q2Select);
+      let r3 = q3(q3Select);
+      let r4 = q4(q4Select);
+      let r5 = q5(q5Select);
+      let allr = r1 + r2 + r3 + r4 + r5;
 
       if (allr > 0) {
-        document.querySelector("div#javaAnswer").removeAttribute("class");
-      } else if (allr > 0 || allr < 80) {
-        document.querySelector("div#pyAnswer").removeAttribute("class");
-      } else if (allr > 80) {
-        document.querySelector("div#cAnswer").removeAttribute("class");
+        allr = document.querySelector("div#javaAnswer").removeAttribute("class");
+      } else if (allr > 0 || allr < 299) {
+        allr = document.querySelector("div#pyAnswer").removeAttribute("class");
+      } else if (allr > 300) {
+        allr = document.querySelector("div#cAnswer").removeAttribute("class");
       }
-      return allr;
     };
-    submitAnswers();
+    window.addEventListener("submit", result);
   };
 };
-
-window.addEventListener("submit", submitAnswers());
