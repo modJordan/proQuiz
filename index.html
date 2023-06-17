@@ -16,69 +16,77 @@
     <!-- Question 1 -->
     <p>This is where Question 1 goes</p>
     <label for="q1Input">
-      <input type="radio" name="q1Input" value="Python" checked>Python Choice 1</label>
+      <input type="radio" name="q1Input" value="Python1" checked>Python Choice 1</label>
     <br />
     <label for="q1Input">
-      <input type="radio" name="q1Input" value="Java">Java Choice 1</label>
+      <input type="radio" name="q1Input" value="Java1">Java Choice 1</label>
     <br />
     <label for="q1Input">
-      <input type="radio" name="q1Input" value="cSharp">cSharp Choice 1</label>
+      <input type="radio" name="q1Input" value="cSharp1">cSharp Choice 1</label>
     <br />
     <!-- Question 2 -->
     <p>This is where Question 2 goes</p>
     <label for="q2Input">
-      <input type="radio" name="q2Input" value="Python" checked>Python Choice 2</label>
+      <input type="radio" name="q2Input" value="Python2" checked>Python Choice 2</label>
     <br />
     <label for="q2Input">
-      <input type="radio" name="q2Input" value="Java">Java Choice 2</label>
+      <input type="radio" name="q2Input" value="Java2">Java Choice 2</label>
     <br />
     <label for="q2Input">
-      <input type="radio" name="q2Input" value="cSharp">cSharp Choice 2</label>
+      <input type="radio" name="q2Input" value="cSharp2">cSharp Choice 2</label>
     <br />
     <!-- Question 3 -->
     <p>This is where Question 3 goes</p>
     <label for="q3Input">
-      <input type="radio" name="q3Input" value="Python" checked>Python Choice 3</label>
+      <input type="radio" name="q3Input" value="Python3" checked>Python Choice 3</label>
     <br />
     <label for="q3Input">
-      <input type="radio" name="q3Input" value="Java">Java Choice 3</label>
+      <input type="radio" name="q3Input" value="Java3">Java Choice 3</label>
     <br />
     <label for="q3Input">
-      <input type="radio" name="q3Input" value="cSharp">cSharp Choice 3</label>
+      <input type="radio" name="q3Input" value="cSharp3">cSharp Choice 3</label>
     <br />
     <!-- Question 4 -->
     <p>This is where Question 4 goes</p>
     <label for="q4Input">
-      <input type="radio" name="q4Input" value="Python" checked>Python Choice 4</label>
+      <input type="radio" name="q4Input" value="Python4" checked>Python Choice 4</label>
     <br />
     <label for="q4Input">
-      <input type="radio" name="q1Input" value="Java">Java Choice 4</label>
+      <input type="radio" name="q1Input" value="Java4">Java Choice 4</label>
     <br />
     <label for="q4Input">
-      <input type="radio" name="q4Input" value="cSharp">cSharp Choice 4</label>
+      <input type="radio" name="q4Input" value="cSharp4">cSharp Choice 4</label>
     <br />
     <!-- Question 5 -->
     <p>This is where Question 5 goes</p>
     <label for="q5Input">
-      <input type="radio" name="q5Input" value="Python" checked>Python choice 5</label>
+      <input type="radio" name="q5Input" value="Python5" checked>Python choice 5</label>
     <br />
     <label for="q5Input">
-      <input type="radio" name="q5Input" value="Java">Java Choice 5</label>
+      <input type="radio" name="q5Input" value="Java5">Java Choice 5</label>
     <br />
     <label for="q5Input">
-      <input type="radio" name="q5Input" value="cSharp">cSharp Choice 5</label>
+      <input type="radio" name="q5Input" value="cSharp5">cSharp Choice 5</label>
     <br />
 
-    <button type="submit" onclick=q1()>Submit Answers</button>
+    <button type="submit" onclick=submitAnswers()>Submit Answers</button>
   </form>
-
-
-  <p class="hidden">You should do C##!</p>
 
 
 
   <!-- This is the UI Output Section -->
   <pre id="log"></pre>
+
+  <div id="javaAnswer" class="hidden">
+    <h1>You should try JavaScript!</h1>
+  </div>
+  <div id="pyAnswer" class="hidden">
+    <h1>You should try Python!</h1>
+  </div>
+  <div id="cAnswer" class="hidden">
+    <h1>You should try C##!</h1>
+  </div>
+  </div>
 </body>
 
 </html>
