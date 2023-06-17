@@ -20,7 +20,6 @@ window.onload = function () {
         q1Select = parseInt(100);
       } return q1Select;
     }
-
     function q2() {
       console.log("function q2 is executing!")
       if (q2Select === "Python2") {
@@ -32,7 +31,6 @@ window.onload = function () {
         console.log(q2Select);
       } return q2Select;
     }
-
     function q3() {
       console.log("function q3 is executing!")
       if (q3Select === "Python3") {
@@ -44,7 +42,6 @@ window.onload = function () {
         console.log(q3Select);
       } return q3Select;
     }
-
     function q4() {
       console.log("function q4 is executing!");
       if (q4Select === "Python4") {
@@ -56,7 +53,6 @@ window.onload = function () {
         console.log(q4Select);
       } return q4Select;
     }
-
     function q5() {
       console.log("function q5 is executing!");
       if (q5Select === "Python5") {
@@ -68,10 +64,6 @@ window.onload = function () {
         console.log(q5Select);
       } return q5Select;
     }
-
-
-
-
     let result = function submitAnswers() {
       console.log("submitAnswer function executing!")
       let r1 = q1(q1Select);
@@ -80,13 +72,13 @@ window.onload = function () {
       let r4 = q4(q4Select);
       let r5 = q5(q5Select);
       let allr = r1 + r2 + r3 + r4 + r5;
-
-      if (allr > 0) {
-        allr = document.querySelector("div#javaAnswer").removeAttribute("class");
-      } else if (allr > 0 || allr < 299) {
-        allr = document.querySelector("div#pyAnswer").removeAttribute("class");
-      } else if (allr > 300) {
-        allr = document.querySelector("div#cAnswer").removeAttribute("class");
+      let result = allr;
+      if (result < 0) {
+        result = document.querySelector("div#javaAnswer").removeAttribute("class");
+      } else if (result > 0 && result < 299) {
+        result = document.querySelector("div#pyAnswer").removeAttribute("class");
+      } else if (result > 300) {
+        result = document.querySelector("div#cAnswer").removeAttribute("class");
       }
     };
     window.addEventListener("submit", result);
