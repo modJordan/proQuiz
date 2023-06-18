@@ -1,3 +1,14 @@
+body {
+  background-color: black;
+  color: white;
+  padding-left: 20rem;
+  padding-right: 20rem;
+  padding-top: 5rem;
+  padding-bottom: 10px;
+  text-align: center;
+
+}
+
 .hidden {
   display: none;
 }

@@ -58,6 +58,7 @@ window.onload = function () {
       } return q5Select;
     }
     let result = function submitAnswers() {
+
       let r1 = q1(q1Select);
       let r2 = q2(q2Select);
       let r3 = q3(q3Select);
@@ -67,10 +68,16 @@ window.onload = function () {
       let result = allr;
       if (result < 0) {
         result = document.querySelector("div#javaAnswer").removeAttribute("class");
+        document.querySelector("div#pyAnswer").setAttribute("class", "hidden");
+        document.querySelector("div#cAnswer").setAttribute("class", "hidden");
       } else if (result > 0 && result < 299) {
         result = document.querySelector("div#pyAnswer").removeAttribute("class");
+        document.querySelector("div#javaAnswer").setAttribute("class", "hidden");
+        document.querySelector("div#cAnswer").setAttribute("class", "hidden");
       } else if (result > 300) {
         result = document.querySelector("div#cAnswer").removeAttribute("class");
+        document.querySelector("div#pyAnswer").setAttribute("class", "hidden");
+        document.querySelector("div#javaAnswer").setAttribute("class", "hidden");
       }
     }; window.addEventListener("submit", result);
   };
