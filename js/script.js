@@ -1,8 +1,6 @@
 window.onload = function () {
   let form = document.querySelector("form");
-  console.log("window onload executing");
   form.onsubmit = function (e) {
-    console.log("onsubmit form reached");
     let q1Select = document.querySelector("input[name='q1Input']:checked").value;
     let q2Select = document.querySelector("input[name='q2Input']:checked").value;
     let q3Select = document.querySelector("input[name='q3Input']:checked").value;
@@ -11,7 +9,6 @@ window.onload = function () {
     e.preventDefault();
 
     function q1() {
-      console.log("I made it to q1! yay");
       if (q1Select === "Python1") {
         q1Select = parseInt(10);
       } else if (q1Select === "Java1") {
@@ -21,7 +18,6 @@ window.onload = function () {
       } return q1Select;
     }
     function q2() {
-      console.log("function q2 is executing!")
       if (q2Select === "Python2") {
         q2Select = parseInt(10);
       } else if (q2Select === "Java2") {
@@ -32,7 +28,6 @@ window.onload = function () {
       } return q2Select;
     }
     function q3() {
-      console.log("function q3 is executing!")
       if (q3Select === "Python3") {
         q3Select = parseInt(10);
       } else if (q3Select === "Java3") {
@@ -43,7 +38,6 @@ window.onload = function () {
       } return q3Select;
     }
     function q4() {
-      console.log("function q4 is executing!");
       if (q4Select === "Python4") {
         q4Select = parseInt(10);
       } else if (q4Select === "Java4") {
@@ -54,7 +48,6 @@ window.onload = function () {
       } return q4Select;
     }
     function q5() {
-      console.log("function q5 is executing!");
       if (q5Select === "Python5") {
         q5Select = parseInt(10);
       } else if (q5Select === "Java5") {
@@ -65,7 +58,6 @@ window.onload = function () {
       } return q5Select;
     }
     let result = function submitAnswers() {
-      console.log("submitAnswer function executing!")
       let r1 = q1(q1Select);
       let r2 = q2(q2Select);
       let r3 = q3(q3Select);
@@ -80,7 +72,6 @@ window.onload = function () {
       } else if (result > 300) {
         result = document.querySelector("div#cAnswer").removeAttribute("class");
       }
-    };
-    window.addEventListener("submit", result);
+    }; window.addEventListener("submit", result);
   };
 };
