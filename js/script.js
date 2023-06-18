@@ -7,7 +7,7 @@ window.onload = function () {
     let q4Select = document.querySelector("input[name='q4Input']:checked").value;
     let q5Select = document.querySelector("input[name='q5Input']:checked").value;
     e.preventDefault();
-
+    // User Input functions
     function q1() {
       if (q1Select === "Python1") {
         q1Select = parseInt(10);
@@ -58,7 +58,7 @@ window.onload = function () {
       } return q5Select;
     }
     let result = function submitAnswers() {
-
+      // Submission function to calculate results
       let r1 = q1(q1Select);
       let r2 = q2(q2Select);
       let r3 = q3(q3Select);
