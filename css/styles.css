@@ -1,13 +1,24 @@
 body {
-  background-color: black;
+  text-decoration: double;
   color: white;
   padding-left: 20rem;
   padding-right: 20rem;
-  padding-top: 5rem;
+  padding-top: 4rem;
   padding-bottom: 10px;
   text-align: center;
-
+  font-family: 'VT323', monospace;
+  z-index: 1;
 }
+
+h1,
+h2 {
+  font-size: 60px;
+}
+
+p {
+  font-size: 32px;
+}
+
 
 .hidden {
   display: none;
