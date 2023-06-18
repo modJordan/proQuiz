@@ -1,10 +1,10 @@
 body {
   text-decoration: double;
   color: white;
-  padding-left: 20rem;
-  padding-right: 20rem;
-  padding-top: 4rem;
-  padding-bottom: 10px;
+  margin-left: 20rem;
+  margin-right: 20rem;
+  margin-top: 4rem;
+  margin-bottom: 10px;
   text-align: center;
   font-family: 'VT323', monospace;
   z-index: 1;
