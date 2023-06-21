@@ -14,7 +14,7 @@
 
 ## Description
 
-_{Download all images and files, make sure images and css files are in correct parent folders, deploy.}_
+_{A quiz that uses radio inputs to calculate a programming language that the user should try.}_
 
 ## Setup/Installation Requirements
 
