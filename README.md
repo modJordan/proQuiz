@@ -28,6 +28,6 @@ _{A quiz that uses radio inputs to calculate a programming language that the use
 
 ## License
 
-_{Let people know what to do if they run into any issues or have questions, ideas or concerns.  Encourage them to contact you or make a contribution to the code.}_
+_{If they run into any issues or have questions, ideas or concerns, please email me at mod.jordan@icloud.com.}_
 
 **License:** Apache License 2.0; June 17th, 2023
