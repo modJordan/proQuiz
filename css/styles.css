@@ -9,7 +9,6 @@ body {
   padding-right: 30px;
   text-align: center;
   font-family: 'VT323', monospace;
-
 }
 
 h1,
@@ -19,6 +18,11 @@ h2 {
 
 p {
   font-size: 32px;
+}
+
+html {
+  background-image: url(/img/rm378-07.jpg);
+  background-size: cover;
 }
 
 
