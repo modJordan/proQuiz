@@ -11,85 +11,88 @@
 </head>
 
 <body>
-  <h1>What Programming Language Should You Choose?</h1>
-  <p>Hi! Welcome to my quiz on which programming language you should choose! Below are five questions to choose an
-    answer from, each answer counts towards your result. Once you've selected all of your answers, press 'Submit' to see
-    your results!</p>
-  <form id="radio-form">
-    <!-- Question 1 -->
-    <p>What's your favorite animal?</p>
-    <label for="q1Input">
-      <input type="radio" name="q1Input" value="Python1" checked>Sssssssnake!</label>
-    <br />
-    <label for="q1Input">
-      <input type="radio" name="q1Input" value="Java1">Woof woof Doggie</label>
-    <br />
-    <label for="q1Input">
-      <input type="radio" name="q1Input" value="cSharp1">Dolphin</label>
-    <br />
-    <!-- Question 2 -->
-    <p>Which day of the week is the best day to wake up late?</p>
-    <label for="q2Input">
-      <input type="radio" name="q2Input" value="Python2" checked>Friday</label>
-    <br />
-    <label for="q2Input">
-      <input type="radio" name="q2Input" value="Java2">Wednesday</label>
-    <br />
-    <label for="q2Input">
-      <input type="radio" name="q2Input" value="cSharp2">Monday</label>
-    <br />
-    <!-- Question 3 -->
-    <p>Get to the Choopa! You say:</p>
-    <label for="q3Input">
-      <input type="radio" name="q3Input" value="Python3" checked>I'll be back!</label>
-    <br />
-    <label for="q3Input">
-      <input type="radio" name="q3Input" value="Java3">Right now! Here, quickly!!!</label>
-    <br />
-    <label for="q3Input">
-      <input type="radio" name="q3Input" value="cSharp3">Hasta la vista bebe!</label>
-    <br />
-    <!-- Question 4 -->
-    <p>Breakfast for Dinnner or Dinnner for Breakfast?</p>
-    <label for="q4Input">
-      <input type="radio" name="q4Input" value="Python4" checked>Shhhhhh</label>
-    <br />
-    <label for="q4Input">
-      <input type="radio" name="q4Input" value="Java4">Yall 'eatin?</label>
-    <br />
-    <label for="q4Input">
-      <input type="radio" name="q4Input" value="cSharp4">Breakfast for Dinna!</label>
-    <br />
-    <!-- Question 5 -->
-    <p>What's your favorite plant?</p>
-    <label for="q5Input">
-      <input type="radio" name="q5Input" value="Python5" checked>Something I can't kill</label>
-    <br />
-    <label for="q5Input">
-      <input type="radio" name="q5Input" value="Java5">JTitan arum</label>
-    <br />
-    <label for="q5Input">
-      <input type="radio" name="q5Input" value="cSharp5">Any type of Fern</label>
-    <br />
-    <br />
-    <br />
-    <!-- Button Input -->
-    <button type="submit">Submit!</button>
-    <button type="reset" id="resetButton">Reset the Quiz!</button>
-  </form>
+  <div class="container">
+    <h1>What Programming Language Should You Choose?</h1>
+    <p>Hi! Welcome to my quiz on which programming language you should choose! Below are five questions to choose an
+      answer from, each answer counts towards your result. Once you've selected all of your answers, press 'Submit' to
+      see
+      your results!</p>
+    <form id="radio-form">
+      <!-- Question 1 -->
+      <p>What's your favorite animal?</p>
+      <label for="q1Input">
+        <input type="radio" name="q1Input" value="Python1" checked>Sssssssnake!</label>
+      <br />
+      <label for="q1Input">
+        <input type="radio" name="q1Input" value="Java1">Woof woof Doggie</label>
+      <br />
+      <label for="q1Input">
+        <input type="radio" name="q1Input" value="cSharp1">Dolphin</label>
+      <br />
+      <!-- Question 2 -->
+      <p>Which day of the week is the best day to wake up late?</p>
+      <label for="q2Input">
+        <input type="radio" name="q2Input" value="Python2" checked>Friday</label>
+      <br />
+      <label for="q2Input">
+        <input type="radio" name="q2Input" value="Java2">Wednesday</label>
+      <br />
+      <label for="q2Input">
+        <input type="radio" name="q2Input" value="cSharp2">Monday</label>
+      <br />
+      <!-- Question 3 -->
+      <p>Get to the Choopa! You say:</p>
+      <label for="q3Input">
+        <input type="radio" name="q3Input" value="Python3" checked>I'll be back!</label>
+      <br />
+      <label for="q3Input">
+        <input type="radio" name="q3Input" value="Java3">Right now! Here, quickly!!!</label>
+      <br />
+      <label for="q3Input">
+        <input type="radio" name="q3Input" value="cSharp3">Hasta la vista bebe!</label>
+      <br />
+      <!-- Question 4 -->
+      <p>Breakfast for Dinnner or Dinnner for Breakfast?</p>
+      <label for="q4Input">
+        <input type="radio" name="q4Input" value="Python4" checked>Shhhhhh</label>
+      <br />
+      <label for="q4Input">
+        <input type="radio" name="q4Input" value="Java4">Yall 'eatin?</label>
+      <br />
+      <label for="q4Input">
+        <input type="radio" name="q4Input" value="cSharp4">Breakfast for Dinna!</label>
+      <br />
+      <!-- Question 5 -->
+      <p>What's your favorite plant?</p>
+      <label for="q5Input">
+        <input type="radio" name="q5Input" value="Python5" checked>Something I can't kill</label>
+      <br />
+      <label for="q5Input">
+        <input type="radio" name="q5Input" value="Java5">JTitan arum</label>
+      <br />
+      <label for="q5Input">
+        <input type="radio" name="q5Input" value="cSharp5">Any type of Fern</label>
+      <br />
+      <br />
+      <br />
+      <!-- Button Input -->
+      <button type="submit">Submit!</button>
+      <button type="reset" id="resetButton">Reset the Quiz!</button>
+    </form>
 
 
 
-  <!-- This is the UI Output Section -->
-  <div id="resetAnswers">
-    <div id="javaAnswer" class="hidden">
-      <h2>You should try JavaScript!</h2>
-    </div>
-    <div id="pyAnswer" class="hidden">
-      <h2>You should try Python!</h2>
-    </div>
-    <div id="cAnswer" class="hidden">
-      <h2>You should try C##!</h2>
+    <!-- This is the UI Output Section -->
+    <div id="resetAnswers">
+      <div id="javaAnswer" class="hidden">
+        <h2>You should try JavaScript!</h2>
+      </div>
+      <div id="pyAnswer" class="hidden">
+        <h2>You should try Python!</h2>
+      </div>
+      <div id="cAnswer" class="hidden">
+        <h2>You should try C##!</h2>
+      </div>
     </div>
   </div>
 </body>
